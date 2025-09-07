@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "8d1188f2-ef26-4604-83ed-e5ee1c4e3569",
+      "email": "dheeru@gmail.com",
+      "passwordHash": "$2b$10$OOChGe1IgcZgViCLzRkK/uEgFYrkMPaG3cVgTPRh6hnB8imCeg2Iu"
+    }
+  ],
+  "items": [
+    { "id": "seed-1", "name": "T-Shirt", "price": 499, "category": "clothing", "description": "Cotton tee", "image": "/assets/products/tshirt.svg", "rating": 4 },
+    { "id": "seed-2", "name": "Jeans", "price": 1499, "category": "clothing", "description": "Denim jeans", "image": "/assets/products/jeans.svg", "rating": 4 },
+    { "id": "seed-3", "name": "Sneakers", "price": 2999, "category": "shoes", "description": "Running shoes", "image": "/assets/products/sneakers.svg", "rating": 5 },
+    { "id": "seed-4", "name": "Headphones", "price": 3499, "category": "electronics", "description": "Over-ear", "image": "/assets/products/headphones.svg", "rating": 5 },
+    { "id": "p-005", "name": "Hoodie - Fleece Lined", "price": 1199, "category": "clothing", "description": "Cozy fleece for cooler days.", "image": "https://images.unsplash.com/photo-1542060748-10c28b62716a?q=80&w=800&auto=format&fit=crop", "rating": 5 },
+    { "id": "p-006", "name": "Athletic Joggers", "price": 999, "category": "clothing", "description": "Moisture-wicking performance.", "image": "/assets/products/joggers.svg", "rating": 4 },
+    { "id": "p-014", "name": "Bluetooth Speaker", "price": 2499, "category": "electronics", "description": "Portable party starter.", "image": "https://images.unsplash.com/photo-1585386959984-a4155223168f?q=80&w=800&auto=format&fit=crop", "rating": 4 },
+    { "id": "p-021", "name": "4K Action Camera", "price": 9999, "category": "electronics", "description": "Adventure-ready footage.", "image": "https://images.unsplash.com/photo-1519183071298-a2962be96f83?q=80&w=800&auto=format&fit=crop", "rating": 4 },
+    { "id": "p-022", "name": "Lightweight Windbreaker", "price": 1799, "category": "clothing", "description": "Packable wind protection.", "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop", "rating": 4 },
+    { "id": "p-024", "name": "Wireless Charging Pad", "price": 999, "category": "electronics", "description": "Fast charge, slim design.", "image": "https://images.unsplash.com/photo-1516962126636-27ad087061cc?q=80&w=800&auto=format&fit=crop", "rating": 4 }
+  ],
+  "carts": {
+    "8d1188f2-ef26-4604-83ed-e5ee1c4e3569": [
+      {
+        "itemId": "seed-1",
+        "quantity": 2
+      },
+      {
+        "itemId": "seed-2",
+        "quantity": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shopoholic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header header-amz">
+    <div class="container header-row">
+      <div class="header-left">
+        <div class="brand amz-logo" data-route="list" id="nav-list">
+          <span class="logo-box">SS</span>
+          <h1>Shopoholic</h1>
+        </div>
+      </div>
+      <form id="search-form" class="amz-search">
+        <input type="text" id="search-q" placeholder="Search Shopoholic" aria-label="Search" />
+        <button type="submit" class="amz-search-btn" aria-label="Search">🔍</button>
+      </form>
+      <nav class="header-right">
+        <div class="nav-block" id="nav-auth-block">
+          <div class="small">Hello <span id="user-name" class="username"></span></div>
+          <div class="strong" id="nav-auth-cta"><button data-route="login" id="nav-login" class="link">Sign in</button> / <button data-route="signup" id="nav-signup" class="link">Sign up</button></div>
+        </div>
+        <button id="nav-logout" class="ghost logout-btn hidden">Logout</button>
+        <button class="cart-link" data-route="cart" id="nav-cart" aria-label="Cart"><span class="cart-icon">🛒</span><span id="cart-count" class="cart-count">0</span></button>
+      </nav>
+    </div>
+    <div class="amz-subnav">
+      <div class="container subnav-row">
+        <button class="pill" data-route="list">All</button>
+        <button class="pill" data-cat="clothing">Clothing</button>
+        <button class="pill" data-cat="shoes">Shoes</button>
+        <button class="pill" data-cat="electronics">Electronics</button>
+        <div class="subnav-filters">
+          <input type="number" id="filter-min" placeholder="Min" step="0.01" />
+          <span class="muted">-</span>
+          <input type="number" id="filter-max" placeholder="Max" step="0.01" />
+          <button id="filter-apply" class="primary">Apply</button>
+        </div>
+        <input type="hidden" id="filter-q" />
+        <input type="hidden" id="filter-category" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="view-login" class="view hidden auth-card">
+      <div class="auth-logo">SS</div>
+      <h2>Welcome back</h2>
+      <p class="muted">Sign in to continue</p>
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input type="password" id="login-password" placeholder="Password" required />
+        <button type="submit" class="primary">Sign in</button>
+      </form>
+      <p class="muted">Don't have an account? <a href="#" data-route="signup">Create one</a></p>
+      <div class="error" id="login-error"></div>
+    </section>
+
+    <section id="view-signup" class="view hidden auth-card">
+      <div class="auth-logo">SS</div>
+      <h2>Create your account</h2>
+      <p class="muted">Join Shopoholic</p>
+      <form id="signup-form">
+        <input type="email" id="signup-email" placeholder="Email" required />
+        <input type="password" id="signup-password" placeholder="Password" required />
+        <button type="submit" class="primary">Create account</button>
+      </form>
+      <div class="error" id="signup-error"></div>
+    </section>
+
+    <section id="view-list" class="view">
+      <div class="shop-layout">
+        <section class="products">
+          <div id="items" class="grid"></div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="muted">© Shopoholic · Built for demo purposes</div>
+      </footer>
+    </section>
+
+    <section id="view-cart" class="view hidden">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <strong>Total: ₹<span id="cart-total">0.00</span></strong>
+      </div>
+    </section>
+  </main>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      window.App.init();
+    });
+  </script>
+  </body>
+  </html>
+
+
