@@ -16,8 +16,10 @@ This is a simple **E-commerce Website** project with:
 
 ## Website
 
-<img width="1723" height="662" alt="image" src="https://github.com/user-attachments/assets/daacfa68-5746-4b80-ae70-c6811084b649" />
+<img width="1723" height="662" alt="Screenshot 2025-09-07 204537" src="https://github.com/user-attachments/assets/6609e53b-a144-48b4-b548-d8c2ab0b70f0" />
 
-<img width="1878" height="915" alt="image" src="https://github.com/user-attachments/assets/c461b6a4-363d-43b5-b75c-c8372d9d4e54" />
+
+<img width="1878" height="915" alt="Screenshot 2025-09-07 204510" src="https://github.com/user-attachments/assets/32fb1793-0d54-483c-8709-44f226040e81" />
+
 
 ---
